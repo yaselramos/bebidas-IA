@@ -1,6 +1,6 @@
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions'
 const MODELO = 'openrouter/elephant-alpha'
-const CLAVE_API = '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'
+const CLAVE_API = import.meta.env.VITE_OPENROUTER_API_KEY as string
 
 type MensajeChat = {
   role: 'system' | 'user' | 'assistant'
